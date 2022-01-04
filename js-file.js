@@ -30,4 +30,6 @@ const divide = function(...num) {
     return calcSum;
 }
 
-console.log(divide(10, 2, 3))
+const operate = ((operator, a, b) => operator(a,b));
+
+console.log(operate(sum, 6, 7))
