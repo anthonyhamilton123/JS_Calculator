@@ -32,4 +32,5 @@ const divide = function(...num) {
 
 const operate = ((operator, a, b) => operator(a,b));
 
-console.log(operate(sum, 6, 7))
+let displayValue = 10;
+

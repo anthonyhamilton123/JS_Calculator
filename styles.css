@@ -1,0 +1,32 @@
+#calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+#calcDisplay{
+    border: 5px solid blue;
+    height: 30px;
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttonContainer{
+    display: flex;
+    margin: 10px;
+}
+
+.buttonColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    margin: 1px;
+    width: 40px;
+    height: 20px; 
+}
