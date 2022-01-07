@@ -45,7 +45,7 @@ const threeBtn = document.querySelector('#three');
 threeBtn.addEventListener('click', () => {displayVariable += '3'; resultsBox.textContent = displayVariable});
 
 const fourBtn = document.querySelector('#four');
-fourBtn.addEventListener('click', () => {displayVariable += '4'; resultsBox.textContent = displayVariable;});
+fourBtn.addEventListener('click', () => {displayVariable += '4'; resultsBox.textContent = displayVariable});
 
 const fiveBtn = document.querySelector('#five');
 fiveBtn.addEventListener('click', () => {displayVariable += '5'; resultsBox.textContent = displayVariable});
@@ -64,3 +64,22 @@ nineBtn.addEventListener('click', () => {displayVariable += '9'; resultsBox.text
 
 const zeroBtn = document.querySelector('#zero');
 zeroBtn.addEventListener('click', () => {displayVariable += '0'; resultsBox.textContent = displayVariable});
+
+let memoryOne;
+const addBtn = document.querySelector('#add');
+addBtn.addEventListener('click', () => {
+    memoryOne = parseInt(displayVariable);
+    displayVariable = "";
+    console.log(displayVariable);
+    operator = sum;
+})
+
+let memoryTwo;
+const equalBtn = document.querySelector('#equalSign');
+equalBtn.addEventListener('click', () => {
+    memoryTwo = parseInt(displayVariable);
+    console.log(memoryOne);
+    console.log(memoryTwo);
+    resultsBox.textContent = operate(operator, memoryOne, memoryTwo);
+})
+
